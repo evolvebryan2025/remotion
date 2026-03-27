@@ -1,3 +1,4 @@
+import React from "react";
 import { Composition } from "remotion";
 import { IntroVideo } from "./templates/IntroVideo";
 import { BulletPoints } from "./templates/BulletPoints";

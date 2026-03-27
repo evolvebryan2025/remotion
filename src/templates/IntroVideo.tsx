@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Sequence, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import { BRAND, FONTS_CSS, useScaleIn, useFadeUp } from "../brand";
 
 const AmbientGlow: React.FC = () => {
@@ -25,7 +25,8 @@ const AmbientGlow: React.FC = () => {
 
 const ProgressBar: React.FC = () => {
   const frame = useCurrentFrame();
-  const pct = (frame / 450) * 100;
+  const { durationInFrames } = useVideoConfig();
+  const pct = (frame / durationInFrames) * 100;
   return (
     <div
       style={{

@@ -78,7 +78,9 @@ const FeatureItem: React.FC<{
   delay: number;
   fromRight?: boolean;
 }> = ({ icon, title, desc, delay, fromRight }) => {
-  const anim = fromRight ? useSlideLeft(delay) : useSlideRight(delay);
+  const slideRightAnim = useSlideRight(delay);
+  const slideLeftAnim = useSlideLeft(delay);
+  const anim = fromRight ? slideLeftAnim : slideRightAnim;
   return (
     <div
       style={{
