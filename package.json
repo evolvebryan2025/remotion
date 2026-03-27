@@ -1,0 +1,21 @@
+{
+  "name": "remotion-templates",
+  "version": "1.0.0",
+  "description": "Remotion video templates for the Disruptors Media team",
+  "scripts": {
+    "start": "npx remotion studio",
+    "build": "npx remotion render src/index.tsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.301",
+    "@remotion/bundler": "4.0.301",
+    "@remotion/renderer": "4.0.301",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "4.0.301"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/react": "^19.1.6"
+  }
+}
